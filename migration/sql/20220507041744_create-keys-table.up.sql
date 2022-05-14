@@ -1,9 +1,9 @@
 CREATE TABLE `keys`
 (
-    `key`      VARCHAR(6)            NOT NULL,
-    is_used    BOOLEAN DEFAULT FALSE NOT NULL,
-    created_at DATETIME              NOT NULL,
-    updated_at datetime              NOT NULL,
+    `key`      VARCHAR(6) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL UNIQUE,
+    is_used    BOOLEAN DEFAULT FALSE                          NOT NULL,
+    created_at DATETIME                                       NOT NULL,
+    updated_at datetime                                       NOT NULL,
     constraint keys_pk
         primary key (`key`)
 );
