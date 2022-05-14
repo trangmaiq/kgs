@@ -1,6 +1,6 @@
 CREATE TABLE `keys`
 (
-    `key`      VARCHAR(6) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL UNIQUE,
+    `key`      VARCHAR(6) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
     is_used    BOOLEAN DEFAULT FALSE                          NOT NULL,
     created_at DATETIME                                       NOT NULL,
     updated_at datetime                                       NOT NULL,

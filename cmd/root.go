@@ -5,6 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/trangmaiq/kgs/cmd/generate"
+	"github.com/trangmaiq/kgs/cmd/serve"
 )
 
 func NewRootCmd() *cobra.Command {
@@ -13,6 +14,7 @@ func NewRootCmd() *cobra.Command {
 	}
 
 	cmd.AddCommand(generate.NewGenerateCmd())
+	cmd.AddCommand(serve.NewServeCmd())
 
 	return cmd
 }
