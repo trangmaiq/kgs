@@ -8,5 +8,8 @@ CREATE TABLE `keys`
         primary key (`key`)
 );
 
-create unique index keys_key_uindex
-    on `keys` (`key`);
+CREATE UNIQUE INDEX keys_key_uindex
+    ON `keys` (`key`);
+
+CREATE INDEX keys_is_used_index
+    ON `keys` (is_used);
